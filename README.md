@@ -16,7 +16,7 @@ stream, per `libs/provably_fair/fair.py`) lives ONCE in the shared engine
 | ⚖️ Published odds | <https://verify.maczo.co/originals/paytables/threecard.json> |
 | 🔧 Shared engine | <https://github.com/maczo-co/originals-verify> |
 
-- **Bias class:** `uniform` — uses a uniform Fisher-Yates / without-replacement draw — no modulo bias.
+- **Bias class:** `uniform` — maps words without a biased modulo reduction (bit extraction, or a uniform Fisher-Yates / without-replacement draw) — no modulo bias.
 - **Recipe:** deck = shuffle(52); player = [0..2], dealer = [3..5]; 3-card ranks (SF>trips>straight>flush>pair>high). Play or fold; settle ante/play + ante bonus. multiplier_e8 = total return per ante.
 
 ## Files
